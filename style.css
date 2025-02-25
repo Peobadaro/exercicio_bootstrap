@@ -14,6 +14,18 @@ body {
     border-radius: 10px;
     max-width: 500px;
     width: 100%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza verticalmente e horizontalmente */
+}
+
+/* Ajusta o container principal */
+.container {
+    padding: 20px;
+    position: relative;
+    min-height: 100vh;
 }
 
 /* Estiliza o botão */
@@ -52,10 +64,14 @@ h2 {
 }
 
 /* Estiliza o rodapé */
-footer a:hover {
-    text-decoration: underline !important;
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
 }
 
-.container {
-    padding: 20px;
+footer a:hover {
+    text-decoration: underline !important;
 }
